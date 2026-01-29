@@ -1,0 +1,27 @@
+﻿@model DogsAdoptionService.ViewModels.DogDetailsViewModel
+
+@{
+    ViewData["Title"] = "Adoption Success!";
+}
+
+<div class="text-center">
+    <h1>🎉 Congratulations!</h1>
+    <h2>You've adopted @Model.Name!</h2>
+    
+    <div class="my-4">
+        <img src="~/Images/@Model.Image" alt="@Model.Name" style="max-height: 400px; border-radius: 10px;" />
+    </div>
+    
+    <div class="alert alert-success">
+        <h4>Welcome to your new family, @Model.Name! 🐕❤️</h4>
+        <p>Don't forget their favorite food: <strong>@Model.FavFood</strong></p>
+        <p>And their favorite toy: <strong>@Model.FavToy</strong></p>
+    </div>
+    
+    <a class="btn btn-primary btn-lg" asp-controller="Dogs" asp-action="Index">
+        See more dogs
+    </a>
+    <a class="btn btn-secondary btn-lg" asp-controller="Home" asp-action="Index">
+        Go to Home
+    </a>
+</div>

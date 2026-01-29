@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\BarkTwain1.jpg" />
+    <Content Remove="wwwroot\Images\Biscuit5.jpg" />
+    <Content Remove="wwwroot\Images\CaptainWoof7.jpg" />
+    <Content Remove="wwwroot\Images\Coco14.jpg" />
+    <Content Remove="wwwroot\Images\Daisy6.jpg" />
+    <Content Remove="wwwroot\Images\Furball3.jpg" />
+    <Content Remove="wwwroot\Images\KaiYoj15.jpg" />
+    <Content Remove="wwwroot\Images\Kenji16.jpg" />
+    <Content Remove="wwwroot\Images\Lola10.jpg" />
+    <Content Remove="wwwroot\Images\Maximus11.jpg" />
+    <Content Remove="wwwroot\Images\PrincessPaws4.jpg" />
+    <Content Remove="wwwroot\Images\Rocky9.jpg" />
+    <Content Remove="wwwroot\Images\Roxy12.jpg" />
+    <Content Remove="wwwroot\Images\SirWaggington2.jpg" />
+    <Content Remove="wwwroot\Images\SnugglePaws8.jpg" />
+    <Content Remove="wwwroot\Images\Teddy13.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\BarkTwain1.jpg" />
+    <None Include="wwwroot\Images\Biscuit5.jpg" />
+    <None Include="wwwroot\Images\CaptainWoof7.jpg" />
+    <None Include="wwwroot\Images\Coco14.jpg" />
+    <None Include="wwwroot\Images\Daisy6.jpg" />
+    <None Include="wwwroot\Images\Furball3.jpg" />
+    <None Include="wwwroot\Images\KaiYoj15.jpg" />
+    <None Include="wwwroot\Images\Kenji16.jpg" />
+    <None Include="wwwroot\Images\Lola10.jpg" />
+    <None Include="wwwroot\Images\Maximus11.jpg" />
+    <None Include="wwwroot\Images\PrincessPaws4.jpg" />
+    <None Include="wwwroot\Images\Rocky9.jpg" />
+    <None Include="wwwroot\Images\Roxy12.jpg" />
+    <None Include="wwwroot\Images\SirWaggington2.jpg" />
+    <None Include="wwwroot\Images\SnugglePaws8.jpg" />
+    <None Include="wwwroot\Images\Teddy13.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
