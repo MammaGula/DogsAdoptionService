@@ -12,6 +12,9 @@ namespace DogsAdoptionService.Data
 
         public DbSet<DogModel> Dogs { get; set; }
 
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

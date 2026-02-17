@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DogsAdoptionService.ViewModels.DogListViewModel>
+﻿@model List<DogsAdoptionService.ViewModels.DogListViewModel>
 
 @{
     ViewData["Title"] = "Dogs Available for Adoption";
@@ -24,6 +24,7 @@
                     }
                     else
                     {
+                        // Show "View Details" button for each dog
                         <a asp-controller="Dogs" asp-action="Details" asp-route-id="@dog.Id" class="btn btn-primary">View Details</a>
                     }
                 </div>

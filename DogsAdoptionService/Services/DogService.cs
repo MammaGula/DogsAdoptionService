@@ -1,5 +1,6 @@
 using DogsAdoptionService.Data;
 using DogsAdoptionService.ViewModels;
+using System.Linq;
 
 namespace DogsAdoptionService.Services
 {
@@ -16,14 +17,17 @@ namespace DogsAdoptionService.Services
         {
             var dogs = await _repository.GetAllAsync();
             
-            return dogs.OrderBy(d => d.Id).Select(d => new DogListViewModel
-            {
-                Id = d.Id,
-                Name = d.Name,
-                Cuteness = d.Cuteness,
-                Image = d.Image,
-                IsAdopted = d.IsAdopted
-            });
+            return dogs
+                .OrderBy(d => d.Id)
+                .Select(d => new DogListViewModel
+                {
+                    Id = d.Id,
+                    Name = d.Name,
+                    Cuteness = d.Cuteness,
+                    Image = d.Image,
+                    IsAdopted = d.IsAdopted
+                })
+                .ToList(); 
         }
 
         public async Task<DogDetailsViewModel?> GetDogByIdAsync(int id)
