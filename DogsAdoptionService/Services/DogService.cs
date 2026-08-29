@@ -16,7 +16,8 @@ namespace DogsAdoptionService.Services
         public async Task<IEnumerable<DogListViewModel>> GetAllDogsAsync()
         {
             var dogs = await _repository.GetAllAsync();
-            
+
+            // Map the list of Dog entities to a list of DogListViewModel
             return dogs
                 .OrderBy(d => d.Id)
                 .Select(d => new DogListViewModel
@@ -37,6 +38,7 @@ namespace DogsAdoptionService.Services
             if (dog == null)
                 return null;
 
+            // If the dog is found, map it to DogDetailsViewModel and return
             return new DogDetailsViewModel
             {
                 Id = dog.Id,
@@ -50,6 +52,8 @@ namespace DogsAdoptionService.Services
             };
         }
 
+        // This method adopts a dog by its ID. If the dog is found and not already adopted,
+        // it updates the IsAdopted property to true and returns the updated dog details.
         public async Task<DogDetailsViewModel?> AdoptDogAsync(int id)
         {
             var dog = await _repository.GetByIdAsync(id);

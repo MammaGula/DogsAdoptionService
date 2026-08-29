@@ -14,7 +14,7 @@ namespace DogsAdoptionService.Data
 
 
 
-
+        // Seed initial data for the Dogs table
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
