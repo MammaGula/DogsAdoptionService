@@ -47,25 +47,7 @@ This repository keeps README screenshots in the root `images/` folder.
 | Dog details | ![Dog details](images/DogDetails.png) |
 | Adopted page | ![Adopted page](images/AdoptedPage.png) |
 
-Dog photos used by the web app are stored in `DogsAdoptionService/wwwroot/Images/`.
 
-Current files include:
-- `BarkTwain1.jpg`
-- `Biscuit5.jpg`
-- `CaptainWoof7.jpg`
-- `Coco14.jpg`
-- `Daisy6.jpg`
-- `Furball3.jpg`
-- `KaiYoj15.jpg`
-- `Kenji16.jpg`
-- `Lola10.jpg`
-- `Maximus11.jpg`
-- `PrincessPaws4.jpg`
-- `Rocky9.jpg`
-- `Roxy12.jpg`
-- `SirWaggington2.jpg`
-- `SnugglePaws8.jpg`
-- `Teddy13.jpg`
 
 ## ⚙️ Configuration
 
