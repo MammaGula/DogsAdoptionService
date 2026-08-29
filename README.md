@@ -36,7 +36,16 @@ A simple ASP.NET Core MVC web app to browse dogs and adopt them. Built with
 
 ## 🖼️ Images Folder
 
-This repository keeps documentation images in the root `images/` folder.
+This repository keeps README screenshots in the root `images/` folder.
+
+### Screenshots
+
+| Page | Preview |
+| --- | --- |
+| Home page | ![Home page](images/homepage.png) |
+| Dogs available | ![Dogs available](images/DogAvailable.png) |
+| Dog details | ![Dog details](images/DogDetails.png) |
+| Adopted page | ![Adopted page](images/AdoptedPage.png) |
 
 Dog photos used by the web app are stored in `DogsAdoptionService/wwwroot/Images/`.
 
@@ -87,7 +96,6 @@ Connection string is in `DogsAdoptionService/appsettings.json`:
 ### Notes
 
 - The default connection string uses LocalDB and creates the `DogAdoptionDb` database.
-- README screenshots or diagrams can be placed in the root `images/` folder and linked here with relative paths.
 - Dog images are loaded from `DogsAdoptionService/wwwroot/Images/`.
 
 ## About
