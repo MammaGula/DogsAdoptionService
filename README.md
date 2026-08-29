@@ -20,6 +20,8 @@ A simple ASP.NET Core MVC web app to browse dogs and adopt them. Built with
 ## 🗂️ Project Structure
 
 - `DogsAdoptionService.slnx` — solution file
+- `README.md` — project documentation
+- `images/` — repository images for README/screenshots
 - `DogsAdoptionService/` — main ASP.NET Core MVC project
   - `Controllers/` — MVC controllers (ex: `DogsController`)
   - `Services/` — business logic (ex: `DogService`)
@@ -34,7 +36,9 @@ A simple ASP.NET Core MVC web app to browse dogs and adopt them. Built with
 
 ## 🖼️ Images Folder
 
-Dog photos are stored in `DogsAdoptionService/wwwroot/Images/`.
+This repository keeps documentation images in the root `images/` folder.
+
+Dog photos used by the web app are stored in `DogsAdoptionService/wwwroot/Images/`.
 
 Current files include:
 - `BarkTwain1.jpg`
@@ -57,6 +61,34 @@ Current files include:
 ## ⚙️ Configuration
 
 Connection string is in `DogsAdoptionService/appsettings.json`:
+
+## 🚀 Setup and Run
+
+### Prerequisites
+
+- .NET 10 SDK
+- SQL Server LocalDB
+
+### Run the app
+
+1. Restore packages:
+   ```powershell
+   dotnet restore
+   ```
+2. Apply the database migration:
+   ```powershell
+   dotnet ef database update --project DogsAdoptionService/DogsAdoptionService.csproj
+   ```
+3. Start the application:
+   ```powershell
+   dotnet run --project DogsAdoptionService/DogsAdoptionService.csproj
+   ```
+
+### Notes
+
+- The default connection string uses LocalDB and creates the `DogAdoptionDb` database.
+- README screenshots or diagrams can be placed in the root `images/` folder and linked here with relative paths.
+- Dog images are loaded from `DogsAdoptionService/wwwroot/Images/`.
 
 ## About
 
